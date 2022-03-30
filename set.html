@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>ES6 Sets</title>
+    </head>
+<body>
+<h1>ES6 Sets Example</h1>
+<p id="one"></p>
+<p id="two"></p>
+<p id="three"></p>
+<p id="four"></p>
+<p id="five"></p>
+<script>
+const name= new Set();
+name.add("Apple");
+name.add("Mango");
+name.add("Orange");
+let text = "";
+let text1 = "";
+name.forEach (function(value) {
+  text += value + "<br>";
+})
+document.getElementById("one").innerHTML ="size of the Set : <br>"+ name.size;
+document.getElementById("two").innerHTML = text;
+document.getElementById("three").innerHTML ="has() method return false because the set doesn’t have that value : <br>"+name.has("Apple");
+name.delete("Mango");
+document.getElementById("four").innerHTML =" delete() method to remove single value: <br>"+ name.size
+name.forEach(function(value, key, ownerSet) {
+    text1+=key + " " + value+"<br>";
+});
+document.getElementById("five").innerHTML ="key and value are the same : <br>"+text1;
+</script>
+</body>
+</html>

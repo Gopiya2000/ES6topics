@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Rest Operator</title>
+    </head>
+<body>
+    <h1>Rest Operator Example</h1>
+<script>
+    // see answer in console.
+function add(a, ...nums) {  
+    console.log(a);
+    console.log(nums);
+    let total = 0;  
+    for (const n of nums) {  
+        total +=n;  
+    }  
+    return total;
+  }  
+    const result = add(5,10,20); 
+    console.log(result);
+  </script>
+  </body>
+  </html>

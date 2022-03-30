@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Map Objects</title>
+</head>
+<body>
+<h1>Map Objects Example</h1>
+<p id="demo"></p>
+<script>
+const apples = {name: 'Apples'};
+const bananas = {name: 'Bananas'};
+const oranges = {name: 'Oranges'};
+const fruits = new Map();
+fruits.set(apples, 800);
+fruits.set(bananas, 100);
+fruits.set(oranges, 600);
+document.getElementById("demo").innerHTML = fruits.get(apples);
+</script>
+</body>
+</html>
