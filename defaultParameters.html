@@ -1,0 +1,18 @@
+<html>
+    <head>
+       <title>Default parameters</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function show(a,b=9){
+            // function show(a,b){
+            // function show(a=9,b=9){
+            return a+b;
+            }                                                                                       
+            document.getElementById("demo").innerHTML=show(3);
+            // document.getElementById("demo").innerHTML=show(3,1);
+            // document.getElementById("demo").innerHTML=show(8,2);
+        </script>
+    </body>
+</html>

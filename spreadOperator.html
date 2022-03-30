@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Spread Operator</title>
+    </head>
+    <body>
+        <h1>Spread Operator Example</h1>
+        <p id="demo"></p>
+        <script>
+            let a=["apple","mango","orange"];
+            let b=["grapes","pineapple",...a];
+            // let b=[...a,"grapes","pineapple"];
+            // let b=["grapes",...a,"pineapple"];
+            document.getElementById("demo").innerHTML=b;
+        </script>
+    </body>
+</html>
